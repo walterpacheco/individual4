@@ -1,0 +1,11 @@
+<h1>Lista de tareas pendientes</h1>
+
+{{#if tareas.length}}
+    <ul>
+        {{#each tareas}}
+            <li>{{tarea}}</li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p>No hay tareas pendientes por hacer.</p>
+{{/if}}
